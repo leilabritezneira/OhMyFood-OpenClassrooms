@@ -1,1 +1,58 @@
-/* body */
+/* Global */ 
+* {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+:root {
+    --primary-color: #9356DC;
+    --secondary-color: #FCA311;
+    --main-bg-color: #F6F6F6;
+    --light-green: #99E2D0;
+    --font-green: #008766;
+    --font-grey: #353535;
+    --light-grey: #EAEAEA;
+}
+
+/** Header **/
+header {
+    color: var(--font-grey);
+}
+header div {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+    background-color: white;
+    filter: drop-shadow(0px 2px 4px #0000004c);
+}
+
+.logo {
+    width: 180px;
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+header i {
+    padding: 15px;
+}
+
+.location{
+    background-color: var(--main-bg-color);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+
+/* Header -> quite the shadow in the desktop version */
