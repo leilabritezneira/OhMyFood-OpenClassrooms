@@ -15,6 +15,10 @@
   --icon-color:#7E7E7E;
 }
 
+a {
+  text-decoration: none;
+}
+
 /** Header * */
 header {
   color: var(--font-grey);
@@ -90,7 +94,7 @@ header h1 {
   border: none;
   border-radius: 50px;
   filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.2));
-  background-image: linear-gradient(170deg, #FF79DA, #9356DC);
+  background-image: linear-gradient(175deg, #FF79DA, #9356DC);
 }
 
 /** Function *  */
@@ -117,8 +121,57 @@ header h1 {
   position: absolute;
 }
 .function h3 {
-  font-weight: 500;
+  font-weight: 400;
   padding: 3px;
+}
+
+/** Restautants * */
+.restautants {
+  background-color: var(--main-bg-color);
+  display: flex;
+  flex-direction: column;
+  padding: 40px 20px;
+}
+.restautants h2 {
+  padding: 10px 0px;
+}
+.restautants .card {
+  border-radius: 20px;
+  background-color: white;
+  margin: 20px 0px;
+}
+.restautants .card img {
+  border-radius: 20px 20px 0px 0px;
+  height: 190px;
+  width: -webkit-fill-available;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 0 62%;
+     object-position: 0 62%;
+}
+.restautants .card span {
+  color: var(--font-green);
+  background-color: var(--light-green);
+  padding: 5px 15px;
+  border-radius: 3px;
+  position: absolute;
+  margin: -180px 270px;
+  font-size: small;
+  font-weight: 500;
+  filter: drop-shadow(0px 4px 2px rgba(0, 0, 0, 0.12));
+}
+.restautants .card .content {
+  padding: 10px 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  color: black;
+}
+.restautants .card .content .card-subtitle {
+  font-weight: lighter;
+  padding: 5px 0px;
+  font-size: large;
 }
 
 /* Header -> quite the shadow in the desktop version *//*# sourceMappingURL=style.css.map */
