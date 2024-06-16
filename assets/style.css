@@ -70,6 +70,12 @@ header h1 {
   color: white;
 }
 
+.icon__gradient {
+  background: linear-gradient(#9356DC, #FF79DA);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .conatiner {
   background-color: var(--main-bg-color);
   display: flex;
@@ -199,10 +205,6 @@ footer ul {
 }
 footer ul li {
   padding: 5px 0px;
-}
-
-.fa-utensils {
-  padding: 0px 10px 0px 0px;
 }
 
 /* Header -> quite the shadow in the desktop version *//*# sourceMappingURL=style.css.map */
