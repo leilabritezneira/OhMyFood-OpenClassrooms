@@ -18,38 +18,40 @@
         <div>
             <img class="logo" src="./assets/images/logo/ohmyfood.png" alt="Logo">
         </div>
-        <div class="location conatiner">
+        <div class="location container">
             <i class="fa-solid fa-location-dot icon"></i>
             <h1>Paris, Belleville </h1>
         </div>
     </header>
     <main>
         <section class="call-to-action">
-            <h2 class="center">Réservez le menu qui vous convient</h2>
+            <h1 class="center">Réservez le menu qui vous convient</h1>
             <p class="thin">Découvrez des restaurants d’exception, sélectionnés par nos soins.</p>
             <a href="#restautants"><button class="btn">Explorer nos restaurants</button></a>
         </section>
         <section class="function">
             <h2>Fonctionnement</h2>
-            <div class="conatiner">
-                <span>1</span>
-                <i class="fa-solid fa-mobile-screen-button icon icon__grey"></i>
-                <h3>Choisissez un restaurant</h3>
-            </div>
-            <div class="conatiner">
-                <span>2</span>
-                <i class="fa-solid fa-bars icon icon__grey"></i>
-                <h3>Composez votre menu</h3>
-            </div>
-            <div class="conatiner">
-                <span>3</span>
-                <i class="fa-solid fa-store icon icon__violet "></i>
-                <h3>Dégustez au restaurant</h3>
+            <div class="flex">
+                <div class="container">
+                    <span>1</span>
+                    <i class="fa-solid fa-mobile-screen-button icon icon__grey"></i>
+                    <h3>Choisissez un restaurant</h3>
+                </div>
+                <div class="container">
+                    <span>2</span>
+                    <i class="fa-solid fa-bars icon icon__grey"></i>
+                    <h3>Composez votre menu</h3>
+                </div>
+                <div class="container">
+                    <span>3</span>
+                    <i class="fa-solid fa-store icon icon__violet "></i>
+                    <h3>Dégustez au restaurant</h3>
+                </div>
             </div>
         </section>
         <section class="restautants" id="restautants">
             <h2>Restaurants</h2>
-            <div>
+            <div class="cards">
                 <a href="/restaurants/la-palette-gout.html">
                     <article class="card">
                         <img src="./assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Image du restaurant la palette du goût">
@@ -105,12 +107,16 @@
     </main>
     <footer>
         <img class="logo logo__small" src="./assets/images/logo/ohmyfood@2x.svg" alt="Logo">
+        <div>
         <ul>
             <li><i class="fa-solid fa-utensils icon__white icon__small fa-fw"></i> Proposer un restaurant </li>
             <li><i class="fa-solid fa-handshake-angle icon__white icon__small fa-fw"></i> Devenir partenaire </li>
+        </ul>    
+        <ul>
             <li> Mentions légales </li>
             <li> Contact </li>
         </ul>
+    </div>
     </footer>
 </body>
 </html>

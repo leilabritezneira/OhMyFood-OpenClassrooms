@@ -36,10 +36,10 @@ header
   padding: 20px
 
 .logo__small 
-  width: 115px
+  width: 105px
 
 header h1
-  font-size: 16px
+  font-size: 16px 
   font-weight: 400
 
 .icon
@@ -65,7 +65,7 @@ header h1
   -webkit-background-clip: text
   -webkit-text-fill-color: transparent
 
-.conatiner
+.container
   background-color: var(--main-bg-color)
   display: flex
   flex-direction: row
@@ -109,7 +109,7 @@ header h1
   h2 
    padding-bottom: 20px
 
-  .conatiner
+  .container
     margin: 20px 0px 20px 15px
     border-radius: 20px
     filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.12))
@@ -180,15 +180,78 @@ header h1
 footer
   background-color: var(--font-grey)
   color: white
-  padding: 10px
+  padding: 0px 10px 30px 10px
 
   ul 
     list-style-type: none
-    padding: 0px 20px 20px 20px
+    padding: 0px 20px
 
     li 
       padding: 5px 0px
 
+/**** Responsive ***
+@media (min-width: 1024px) 
+  .icon
+    font-size: large
 
+  .logo__small
+    padding: 0px 40px
 
-/* Header -> quite the shadow in the desktop version
+  header
+    div
+      filter: none
+
+  .container
+    background-color: var(--light-grey)
+  
+  .call-to-action 
+    h1
+      font-size: 40px 
+
+    .thin
+      font-size: 18px 
+
+  .function
+    padding: 50px 180px
+
+    .flex 
+      display: flex 
+      flex-direction: row
+      justify-content: space-around
+
+    .container 
+      background-color: var(--main-bg-color)
+      flex-grow: 1
+      margin: 20px
+      padding: 10px 15px
+
+    h3 
+      font-size: medium
+
+  .restautants 
+    padding: 50px 180px
+
+    .cards 
+      display: flex
+      flex-wrap: wrap
+      flex-direction: row
+      justify-content: space-between
+
+      a 
+        width: 48% 
+
+  footer
+    display: flex
+    flex-direction: row-reverse
+    padding: 60px 15px 30px 15px
+
+    div 
+      display: flex
+
+      ul 
+        display: flex
+        align-items: center
+        padding: 0px 35px 0px 0px
+
+        li 
+          padding: 5px
