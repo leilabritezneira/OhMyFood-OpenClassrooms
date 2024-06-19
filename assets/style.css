@@ -31,11 +31,12 @@ header div {
   justify-content: center;
   background-color: white;
   filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.2980392157));
+  padding-top: 10px;
 }
 
 .logo {
   width: 180px;
-  padding: 20px;
+  padding: 15px;
 }
 
 .logo__small {
@@ -107,7 +108,7 @@ header h1 {
 
 .btn {
   color: white;
-  padding: 18px;
+  padding: 17px 25px;
   margin: 30px;
   font-size: large;
   border: none;
