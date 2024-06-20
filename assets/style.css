@@ -40,7 +40,6 @@ header div {
     padding: 25px;
   }
 }
-
 .logo__small {
   width: 105px;
 }
@@ -65,24 +64,19 @@ header h1 {
     font-size: large;
   }
 }
-
 .icon__small {
   font-size: small;
   padding: 0px 5px 0px 0px;
 }
-
 .icon__violet {
   color: #9356DC;
 }
-
 .icon__grey {
   color: #7E7E7E;
 }
-
 .icon__white {
   color: white;
 }
-
 .icon__gradient {
   background: linear-gradient(#9356DC, #FF79DA);
   -webkit-background-clip: text;
