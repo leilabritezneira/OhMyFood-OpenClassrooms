@@ -4,15 +4,15 @@
   margin: 0
   font-family: "Roboto", sans-serif
 
-\:root
-  --primary-color:#9356DC
-  --secondary-color:#FCA311
-  --main-bg-color:#F6F6F6
-  --light-green:#99E2D0
-  --font-green:#008766
-  --font-grey:#353535
-  --light-grey:#EAEAEA
-  --icon-color:#7E7E7E
+/*** Colors ***
+$primary-color: #9356DC
+$secondary-color: #FCA311
+$main-bg-color: #F6F6F6
+$tertiary-color: #99E2D0
+$green: #008766
+$font-grey: #353535
+$light-grey: #EAEAEA
+$icon-color: #7E7E7E
 
 a 
   text-decoration: none 
@@ -20,7 +20,7 @@ a
 /** Header *
 
 header
-  color: var(--font-grey)
+  color: $font-grey
 
   div
     width: 100%
@@ -45,7 +45,7 @@ header h1
 
 .icon
   padding: 15px
-  color: var(--font-grey)
+  color: $font-grey
   font-size: x-large
 
 .icon__small 
@@ -53,10 +53,10 @@ header h1
   padding: 0px 5px 0px 0px
 
 .icon__violet 
-  color: var(--primary-color)
+  color: $primary-color
 
 .icon__grey
-  color: var(--icon-color)
+  color: $icon-color
 
 .icon__white
   color: white
@@ -67,7 +67,7 @@ header h1
   -webkit-text-fill-color: transparent
 
 .container
-  background-color: var(--main-bg-color)
+  background-color: $main-bg-color
   display: flex
   flex-direction: row
   align-items: center
@@ -78,7 +78,7 @@ header h1
 /** Call to action section *
 
 .call-to-action
-  background-color: var(--main-bg-color)
+  background-color: $main-bg-color
   display: flex
   flex-direction: column
   padding: 35px
@@ -118,7 +118,7 @@ header h1
     display: flex
 
   span 
-    background-color: var(--primary-color)
+    background-color: $primary-color
     padding: 3px 8px
     margin: -30px
     border-radius: 50px
@@ -132,7 +132,7 @@ header h1
 /** Restautants *
 
 .restautants 
-  background-color: var(--main-bg-color)
+  background-color: $main-bg-color
   display: flex
   flex-direction: column
   padding: 40px 20px
@@ -153,8 +153,8 @@ header h1
       object-position: 0 62%
 
     span
-      color: var(--font-green)
-      background-color: var(--light-green)
+      color: $green
+      background-color: $tertiary-color
       padding: 5px 15px
       border-radius: 3px
       position: absolute
@@ -179,7 +179,7 @@ header h1
 /** Footer *
 
 footer
-  background-color: var(--font-grey)
+  background-color: $font-grey
   color: white
   padding: 0px 10px 30px 10px
 
@@ -203,7 +203,7 @@ footer
       filter: none
 
   .container
-    background-color: var(--light-grey)
+    background-color: $light-grey
   
   .call-to-action 
     h1
@@ -221,7 +221,7 @@ footer
       justify-content: space-around
 
     .container 
-      background-color: var(--main-bg-color)
+      background-color: $main-bg-color
       flex-grow: 1
       margin: 20px
       padding: 10px 15px
