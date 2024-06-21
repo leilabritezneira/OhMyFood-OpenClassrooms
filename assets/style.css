@@ -133,9 +133,9 @@ header h1 {
   margin: 30px;
   font-size: large;
   border: none;
-  border-radius: 50px;
   background-image: linear-gradient(175deg, #FF79DA, #9356DC);
   filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.2));
+  border-radius: 50px;
 }
 
 /** Function *  */
@@ -173,13 +173,13 @@ header h1 {
     padding: 10px 15px;
   }
 }
-.function span {
+.function .number-label {
   background-color: #9356DC;
   padding: 3px 8px;
   margin: -30px;
-  border-radius: 50px;
   color: white;
   position: absolute;
+  border-radius: 50px;
 }
 .function h3 {
   font-weight: 400;
@@ -233,7 +233,7 @@ header h1 {
   -o-object-position: 0 62%;
      object-position: 0 62%;
 }
-.restautants .cards span {
+.restautants .cards .new-label {
   color: #008766;
   background-color: #99E2D0;
   padding: 5px 15px;
