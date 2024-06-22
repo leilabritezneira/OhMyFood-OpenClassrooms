@@ -20,11 +20,14 @@ $icon-color: #7E7E7E
 
 /***** Mixin *****
 
-@mixin shadow 
-  filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.2))
+@mixin shadow($blur, $color)
+  filter: drop-shadow(0px 4px $blur $color)
 
 @mixin border-ronded 
   border-radius: 50px
+
+@mixin gradient($first-color, $second-color) 
+  background-image: linear-gradient(175deg, $first-color, $second-color)
 
 /** Header *
 
@@ -38,7 +41,7 @@ header
     flex-direction: row
     justify-content: center
     background-color: white
-    filter: drop-shadow(0px 2px 4px #0000004c)
+    filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 25%))
     padding-top: 10px
 
     @media (min-width: 1024px) 
@@ -99,6 +102,7 @@ header h1
 
 .location
   justify-content: center
+  padding: 0px
 
 /** Call to action section *
 
@@ -128,9 +132,17 @@ header h1
   margin: 30px
   font-size: large
   border: none
-  background-image: linear-gradient(175deg, #FF79DA, #9356DC)
-  @include shadow
+  @include gradient(#FF79DA, #9356DC)
+  @include shadow(10px, rgba(0, 0, 0, 25%))
   @include border-ronded
+
+  &:hover
+    transition-property: background-image, filter
+    transition-duration: 2s
+    transition-delay: 0s
+    @include gradient(#ff88da, #9365df)
+    @include shadow(15px, rgba(0, 0, 0, 35%))
+
 
 /** Function * 
 
@@ -155,7 +167,7 @@ header h1
     border-radius: 20px
     padding: 15px
     display: flex
-    @include shadow
+    @include shadow(10px, rgba(0, 0, 0, 25%))
 
     @media (min-width: 1024px) 
       background-color: $main-bg-color
@@ -224,7 +236,7 @@ header h1
       margin: 10px -90px
       font-size: small
       font-weight: 500
-      @include shadow
+      @include shadow(10px, rgba(0, 0, 0, 25%))
 
     .content
       padding: 10px 15px
