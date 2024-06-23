@@ -10,6 +10,7 @@ img {
   width-z-index: -1;
 }
 
+/** Card */
 .main-card {
   background-color: #F6F6F6;
   padding: 30px 15px;
@@ -18,16 +19,43 @@ img {
   position: relative;
   z-index: 1;
 }
-
-.title {
+.main-card .title {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
+  padding: 5px;
 }
-
-.shrikhand {
+.main-card .shrikhand {
   font-family: "Shrikhand", serif;
   font-size: 28px;
   font-weight: lighter;
+}
+.main-card .link {
+  display: contents;
+}
+.main-card .link .heart-checkbox {
+  display: none;
+}
+.main-card .link .heart-checkbox:checked + .heart-button > .fa-regular {
+  display: none;
+}
+.main-card .link .heart-checkbox:checked + .heart-button > .fa-solid {
+  display: flex;
+}
+@media (min-width: 1025px) {
+  .main-card .link .heart-checkbox:checked + .heart-button > .fa-solid {
+    font-size: x-large;
+  }
+}
+.main-card .link .heart-button {
+  cursor: pointer;
+  position: absolute;
+  margin: -10px 300px;
+}
+.main-card .link .heart-button .fa-solid {
+  display: none;
+}
+@media (min-width: 1025px) {
+  .main-card .link .heart-button .fa-regular {
+    font-size: x-large;
+  }
 }/*# sourceMappingURL=restaurant-style.css.map */

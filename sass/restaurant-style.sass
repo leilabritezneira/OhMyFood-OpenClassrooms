@@ -19,6 +19,8 @@ img
   width: 100%
     z-index: -1
 
+/** Card
+
 .main-card 
   background-color: $main-bg-color
   padding: 30px 15px
@@ -27,13 +29,41 @@ img
   position: relative
   z-index: 1
 
-.title
-  display: flex
-  flex-direction: row
-  justify-content: space-around
-  align-items: center
+  .title
+    display: flex
+    flex-direction: row
+    padding: 5px
 
-.shrikhand
-  font-family: "Shrikhand", serif
-  font-size: 28px 
-  font-weight: lighter
+  .shrikhand
+    font-family: "Shrikhand", serif
+    font-size: 28px 
+    font-weight: lighter  
+
+  .link  
+    display: contents
+
+    .heart-checkbox 
+      display: none
+        
+    .heart-checkbox:checked + .heart-button > .fa-regular 
+      display: none
+        
+    .heart-checkbox:checked + .heart-button > .fa-solid 
+      display: flex
+          
+      @media (min-width: 1025px)
+        font-size: x-large
+
+    .heart-button 
+      cursor: pointer 
+      position: absolute
+      margin: -10px 300px
+
+      .fa-solid 
+        display: none
+
+      .fa-regular
+        
+        @media (min-width: 1025px)
+          font-size: x-large
+
