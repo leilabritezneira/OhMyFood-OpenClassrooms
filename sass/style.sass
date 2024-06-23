@@ -6,6 +6,7 @@
 
 a 
   text-decoration: none 
+  color: black
 
 /*** Variables ***
 
@@ -211,14 +212,13 @@ header h1
       flex-direction: row
       justify-content: space-between
 
-    a 
-      @media (min-width: 1024px) 
-        width: 48% 
-
     .card
       border-radius: 20px
       background-color: white
       margin: 20px 0px
+
+      @media (min-width: 1024px) 
+        width: 48% 
 
     img 
       border-radius: 20px 20px 0px 0px 
@@ -241,15 +241,42 @@ header h1
     .content
       padding: 10px 15px
       display: flex
-      flex-direction: row
-      justify-content: space-between
-      align-items: center
+      flex-direction: column
+      align-items: flex-start
       color: black
 
       .card-subtitle 
         font-weight: lighter
         padding: 5px 0px
         font-size: large
+ 
+    .link  
+      display: contents
+
+      .heart-checkbox 
+        display: none
+        
+      .heart-checkbox:checked + .heart-button > .fa-regular 
+        display: none
+        
+      .heart-checkbox:checked + .heart-button > .fa-solid 
+        display: flex
+          
+        @media (min-width: 1025px)
+          font-size: x-large
+
+      .heart-button 
+        cursor: pointer 
+        position: absolute
+        margin: -65px 290px
+
+        .fa-solid 
+          display: none
+
+        .fa-regular
+        
+          @media (min-width: 1025px)
+            font-size: x-large
 
 /** Footer *
 

@@ -6,6 +6,7 @@
 
 a {
   text-decoration: none;
+  color: black;
 }
 
 /*** Variables *** */
@@ -222,15 +223,15 @@ header h1 {
     justify-content: space-between;
   }
 }
-@media (min-width: 1024px) {
-  .restautants .cards a {
-    width: 48%;
-  }
-}
 .restautants .cards .card {
   border-radius: 20px;
   background-color: white;
   margin: 20px 0px;
+}
+@media (min-width: 1024px) {
+  .restautants .cards .card {
+    width: 48%;
+  }
 }
 .restautants .cards img {
   border-radius: 20px 20px 0px 0px;
@@ -255,15 +256,44 @@ header h1 {
 .restautants .cards .content {
   padding: 10px 15px;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
   color: black;
 }
 .restautants .cards .content .card-subtitle {
   font-weight: lighter;
   padding: 5px 0px;
   font-size: large;
+}
+.restautants .cards .link {
+  display: contents;
+}
+.restautants .cards .link .heart-checkbox {
+  display: none;
+}
+.restautants .cards .link .heart-checkbox:checked + .heart-button > .fa-regular {
+  display: none;
+}
+.restautants .cards .link .heart-checkbox:checked + .heart-button > .fa-solid {
+  display: flex;
+}
+@media (min-width: 1025px) {
+  .restautants .cards .link .heart-checkbox:checked + .heart-button > .fa-solid {
+    font-size: x-large;
+  }
+}
+.restautants .cards .link .heart-button {
+  cursor: pointer;
+  position: absolute;
+  margin: -65px 290px;
+}
+.restautants .cards .link .heart-button .fa-solid {
+  display: none;
+}
+@media (min-width: 1025px) {
+  .restautants .cards .link .heart-button .fa-regular {
+    font-size: x-large;
+  }
 }
 
 /** Footer * */
