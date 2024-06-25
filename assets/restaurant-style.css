@@ -1,4 +1,5 @@
 /*** Variables *** */
+/***** Mixin ***** */
 /** Header * */
 .back {
   position: absolute;
@@ -13,7 +14,7 @@ img {
 /** Card */
 .main-card {
   background-color: #F6F6F6;
-  padding: 30px 15px;
+  padding: 15px;
   border-radius: 45px 45px 0px 0px;
   margin-top: -50px;
   position: relative;
@@ -22,7 +23,7 @@ img {
 .main-card .title {
   display: flex;
   flex-direction: row;
-  padding: 5px;
+  padding: 25px 5px;
 }
 .main-card .shrikhand {
   font-family: "Shrikhand", serif;
@@ -58,4 +59,58 @@ img {
   .main-card .link .heart-button .fa-regular {
     font-size: x-large;
   }
+}
+
+/** Enter  */
+.title-section {
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 18px;
+  padding: 3px 0;
+}
+
+.line {
+  background-color: #99E2D0;
+  padding: 1.5px;
+  width: 40px;
+  margin: 3px 0;
+}
+
+.card {
+  margin: 15px 0;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  background-color: white;
+  filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.1));
+}
+.card .content-card {
+  padding: 12px 15px;
+  text-overflow: ellipsis;
+}
+.card .price {
+  padding: 12px 15px;
+}
+.card .strong {
+  font-weight: 500;
+}
+.card .card-text {
+  font-weight: 300;
+  padding-top: 5px;
+}
+.card .selected {
+  display: none;
+}
+.card .selected:hover {
+  /*display: flex */
+  background-color: #99E2D0;
+  padding: 27px 20px;
+  width: 10%;
+  display: flex;
+  justify-content: center;
+  border-radius: 0px 20px 20px 0px;
+}
+.card .selected .fa-circle-check {
+  color: white;
 }/*# sourceMappingURL=restaurant-style.css.map */
