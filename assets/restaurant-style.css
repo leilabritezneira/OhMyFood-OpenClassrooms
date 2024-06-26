@@ -23,7 +23,7 @@ img {
 .main-card .title {
   display: flex;
   flex-direction: row;
-  padding: 25px 5px;
+  padding: 20px 5px;
 }
 .main-card .shrikhand {
   font-family: "Shrikhand", serif;
@@ -62,6 +62,10 @@ img {
 }
 
 /** Enter  */
+.dishes-section {
+  padding: 15px 0px;
+}
+
 .title-section {
   font-weight: 300;
   text-transform: uppercase;
