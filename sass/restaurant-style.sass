@@ -1,3 +1,19 @@
+/*** Variables ***
+
+$primary-color: #9356DC
+$secondary-color: #FCA311
+$main-bg-color: #F6F6F6
+$tertiary-color: #99E2D0
+$green: #008766
+$font-grey: #353535
+$light-grey: #EAEAEA
+$icon-color: #7E7E7E
+
+/***** Mixin *****
+
+@mixin shadow($blur, $color)
+  filter: drop-shadow(0px 4px $blur $color)
+
 /** Header *
 
 .back
@@ -6,3 +22,114 @@
 
 img
   width: 100%
+    z-index: -1
+
+/** Card
+
+.main-card 
+  background-color: $main-bg-color
+  padding: 15px
+  border-radius: 45px 45px 0px 0px
+  margin-top: -50px
+  position: relative
+  z-index: 1
+
+  .title
+    display: flex
+    flex-direction: row
+    padding: 20px 5px
+
+  .shrikhand
+    font-family: "Shrikhand", serif
+    font-size: 28px 
+    font-weight: lighter  
+
+  .link  
+    display: contents
+
+    .heart-checkbox 
+      display: none
+        
+    .heart-checkbox:checked + .heart-button > .fa-regular 
+      display: none
+        
+    .heart-checkbox:checked + .heart-button > .fa-solid 
+      display: flex
+          
+      @media (min-width: 1025px)
+        font-size: x-large
+
+    .heart-button 
+      cursor: pointer 
+      position: absolute
+      margin: -10px 300px
+
+      .fa-solid 
+        display: none
+
+      .fa-regular
+        
+        @media (min-width: 1025px)
+          font-size: x-large
+
+/** Enter 
+
+.dishes-section
+  padding: 15px 0px
+
+.title-section 
+  font-weight: 300
+  text-transform: uppercase
+  font-size: 18px
+  padding: 3px 0
+
+.line 
+  background-color: $tertiary-color
+  padding: 1.5px
+  width: 40px
+  margin: 3px 0
+
+.card 
+  margin: 15px 0
+  border-radius: 20px
+  display: flex
+  justify-content: space-between
+  align-items: flex-end
+  background-color: white
+  @include shadow(10px, rgba(0, 0, 0, 10%))
+
+  .content-card 
+    padding: 12px 15px
+    overflow: hidden
+    white-space: nowrap
+    /*text-overflow: ellipsis
+
+  .price
+    padding: 12px 15px
+
+  .strong
+    font-weight: 500
+
+  .card-text
+    font-weight: 300
+    padding-top: 5px 
+
+  .selected 
+    display: none
+
+    &:hover
+      /*display: flex
+      background-color: $tertiary-color
+      padding:27px 20px
+      width: 10%
+      display: flex
+      justify-content: center
+      border-radius: 0px 20px 20px 0px
+
+    .fa-circle-check
+      color: white
+
+.btn-section 
+  display: flex
+  justify-content: center
+
