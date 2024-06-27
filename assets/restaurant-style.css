@@ -91,7 +91,9 @@ img {
 }
 .card .content-card {
   padding: 12px 15px;
-  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  /*text-overflow: ellipsis */
 }
 .card .price {
   padding: 12px 15px;
