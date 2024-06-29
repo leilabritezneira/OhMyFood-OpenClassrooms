@@ -9,27 +9,174 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
     <title>Oh my food</title>
     <link rel="stylesheet" href="../assets/style.css"> 
+    <link rel="stylesheet" href="../assets/restaurant-style.css"> 
     <link rel="stylesheet" href="../sass/style.sass">
+    <link rel="stylesheet" href="../sass/restaurant-style.sass">
 </head>
 <body>
     <header>
         <div>
+            <a href="../index.html" class="back"><i class="fa-solid fa-arrow-left icon"></i></a>
             <img class="logo" src="../assets/images/logo/ohmyfood.png" alt="Logo">
         </div>
     </header>
     <main>
-
+        <img src="../assets/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="Image du restaurant la note enchantée">
+        <div class="main-card">
+            <div class="title">
+                <h1 class="shrikhand">La note enchantée</h1>
+                <div class="link">
+                    <input type="checkbox" id="heart" class="heart-checkbox"> 
+                    <label for="heart" class="heart-button"> 
+                        <i class="fa-regular fa-heart icon"></i> 
+                        <i class="fa-solid fa-heart icon icon__gradient"></i>
+                    </label>                                    
+                </div>
+            </div>
+            <section class="dishes-section">
+                <h2 class="title-section">Entrées</h2>
+                <div class="line"></div>
+                <article class="card">
+                    <div class="content-card">
+                        <h3 class="strong">Ravioles de foie gras</h3>
+                        <p class="card-text">Accompagnées de leur crème à la truffe</p>
+                    </div>
+                    <p class="strong price">25€</p>
+                    <div class="selected">
+                        <i class="fa-solid fa-circle-check"></i>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="content-card">
+                        <h3 class="strong">Caviar osciètre </h3>
+                        <p class="card-text">Sur blini à la farine de blé noir</p>
+                    </div>
+                    <p class="strong price">35€</p>
+                    <div class="selected">
+                        <i class="fa-solid fa-circle-check"></i>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="content-card">
+                        <h3 class="strong">Homard et espuma de potiron</h3>
+                        <p class="card-text">Marinés aux zestes d'orange</p>
+                    </div>
+                    <p class="strong price">20€</p>
+                    <div class="selected">
+                        <i class="fa-solid fa-circle-check"></i>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="content-card">
+                        <h3 class="strong">Foie gras de canard cuit entier</h3>
+                        <p class="card-text">Confiture de figue et pain toasté</p>
+                    </div>
+                    <p class="strong price">35€</p>
+                    <div class="selected">
+                        <i class="fa-solid fa-circle-check"></i>
+                    </div>
+                </article>
+            </section>
+            <section class="dishes-section">
+                <h2 class="title-section">Plats</h2>
+                <div class="line"></div>
+                <article class="card">
+                    <div class="content-card">
+                        <h3 class="strong">Filet de bœuf aux herbes</h3>
+                        <p class="card-text">Accompagné de sa ribambelle de légumes</p>
+                    </div>
+                    <p class="strong price">40€</p>
+                    <div class="selected">
+                        <i class="fa-solid fa-circle-check"></i>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="content-card">
+                        <h3 class="strong">Noix de coquilles Saint-Jacques</h3>
+                        <p class="card-text">Sur lit de purée de céleri-rave</p>
+                    </div>
+                    <p class="strong price">40€</p>
+                    <div class="selected">
+                        <i class="fa-solid fa-circle-check"></i>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="content-card">
+                        <h3 class="strong">Langoustine poêlée</h3>
+                        <p class="card-text">Purée de patate douce</p>
+                    </div>
+                    <p class="strong price">35€</p>
+                    <div class="selected">
+                        <i class="fa-solid fa-circle-check"></i>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="content-card">
+                        <h3 class="strong">Mijoté de queue de bœuf </h3>
+                        <p class="card-text">Et riz sauvage aux zestes de citron</p>
+                    </div>
+                    <p class="strong price">44€</p>
+                    <div class="selected">
+                        <i class="fa-solid fa-circle-check"></i>
+                    </div>
+                </article>
+            </section>
+            <section class="dishes-section">
+                <h2 class="title-section">Desserts</h2>
+                <div class="line"></div>
+                <article class="card">
+                    <div class="content-card">
+                        <h3 class="strong">Macaron noisette et chocolat</h3>
+                        <p class="card-text">Glace au caramel brun et sel de Guérande</p>
+                    </div>
+                    <p class="strong price">18€</p>
+                    <div class="selected">
+                        <i class="fa-solid fa-circle-check"></i>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="content-card">
+                        <h3 class="strong">Baba au rhum revisité </h3>
+                        <p class="card-text">Avec son coulis de citron</p>
+                    </div>
+                    <p class="strong price">22€</p>
+                    <div class="selected">
+                        <i class="fa-solid fa-circle-check"></i>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="content-card">
+                        <h3 class="strong">Tarte au citron meringuée </h3>
+                        <p class="card-text">Déstructurée</p>
+                    </div>
+                    <p class="strong price">23€</p>
+                    <div class="selected">
+                        <i class="fa-solid fa-circle-check"></i>
+                    </div>
+                </article>
+            </section>
+            <div class="btn-section">
+                <button class="btn">Commander</button>
+            </div>
+        </div>                 
     </main>
     <footer>
         <img class="logo logo__small" src="../assets/images/logo/ohmyfood@2x.svg" alt="Logo">
+        <div>
         <ul>
-            <li><i class="fa-solid fa-utensils icon__white icon__small"></i> Proposer un restaurant </li>
-            <li><i class="fa-solid fa-handshake-angle icon__white icon__small"></i> Devenir partenaire </li>
+            <li><i class="fa-solid fa-utensils icon__white icon__small fa-fw"></i> Proposer un restaurant </li>
+            <li><i class="fa-solid fa-handshake-angle icon__white icon__small fa-fw"></i> Devenir partenaire </li>
+        </ul>    
+        <ul>
             <li> Mentions légales </li>
-            <li> Contact </li>
+            <li> <a href="mailto:paris-belleville@ohmyfood.com" class="icon__white">Contact</a> </li>
         </ul>
+    </div>
     </footer>
 </body>
 </html>
