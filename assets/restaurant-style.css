@@ -93,7 +93,7 @@ img {
   padding: 12px 15px;
   overflow: hidden;
   white-space: nowrap;
-  /*text-overflow: ellipsis */
+  text-overflow: ellipsis;
 }
 .card .price {
   padding: 12px 15px;
@@ -104,6 +104,11 @@ img {
 .card .card-text {
   font-weight: 300;
   padding-top: 5px;
+}
+.card .card-text:hover {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 .card .selected {
   display: none;
