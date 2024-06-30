@@ -14,18 +14,37 @@ $icon-color: #7E7E7E
 @mixin shadow($blur, $color)
   filter: drop-shadow(0px 4px $blur $color)
 
-/** Header *
+main 
+  @media (min-width: 1025px) 
+    display: flex
+    flex-direction: column
+    align-items: center
 
-.header
-  
+/** Header *
 
 .back
   position: absolute
-  margin: 5px 340px 0px 0px
+  margin: 0px 340px 0px 0px
+  
+  @media (min-width: 1025px)
+    width: 100%
+    margin: 0px
+    padding: 14px 0px
 
-img
-  width: 100%
-    z-index: -1
+.fa-arrow-left
+  @media (min-width: 1025px)
+    padding-left: 25px
+    font-size: x-large
+
+.restaurant-img
+  width:100% 
+  z-index: -1
+  object-position: 0 62%
+
+  @media (min-width: 1025px)
+    height: 350px
+    width: -webkit-fill-available
+    object-fit: cover  
 
 /** Card
 
@@ -36,6 +55,12 @@ img
   margin-top: -50px
   position: relative
   z-index: 1
+
+  @media (min-width: 1025px)
+    width: 70%
+    display: flex
+    flex-direction: column
+    align-items: center
 
   .title
     display: flex
@@ -79,6 +104,8 @@ img
 
 .dishes-section
   padding: 15px 0px
+  @media (min-width: 1025px)
+    width: 65%
 
 .title-section 
   font-weight: 300
@@ -141,3 +168,5 @@ img
   display: flex
   justify-content: center
 
+  @media (min-width: 1025px)
+    width: 45%
