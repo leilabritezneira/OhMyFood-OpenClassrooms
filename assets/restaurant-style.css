@@ -31,8 +31,11 @@
 .restaurant-img {
   width: 100%;
   z-index: -1;
-  -o-object-position: 0 62%;
-     object-position: 0 62%;
+  -o-object-position: 0 45%;
+     object-position: 0 45%;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 @media (min-width: 1025px) {
   .restaurant-img {
@@ -40,6 +43,8 @@
     width: -webkit-fill-available;
     -o-object-fit: cover;
        object-fit: cover;
+    -o-object-position: 0 55%;
+       object-position: 0 55%;
   }
 }
 
