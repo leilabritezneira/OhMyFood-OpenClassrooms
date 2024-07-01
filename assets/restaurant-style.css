@@ -1,14 +1,51 @@
 /*** Variables *** */
 /***** Mixin ***** */
+@media (min-width: 1025px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 /** Header * */
 .back {
   position: absolute;
-  margin: 5px 340px 0px 0px;
+  margin: 0px 340px 0px 0px;
+}
+@media (min-width: 1025px) {
+  .back {
+    width: 100%;
+    margin: 0px;
+    padding: 14px 0px;
+  }
 }
 
-img {
+@media (min-width: 1025px) {
+  .fa-arrow-left {
+    padding-left: 25px;
+    font-size: x-large;
+  }
+}
+
+.restaurant-img {
   width: 100%;
-  width-z-index: -1;
+  z-index: -1;
+  -o-object-position: 0 45%;
+     object-position: 0 45%;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media (min-width: 1025px) {
+  .restaurant-img {
+    height: 350px;
+    width: -webkit-fill-available;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: 0 55%;
+       object-position: 0 55%;
+  }
 }
 
 /** Card */
@@ -19,6 +56,14 @@ img {
   margin-top: -50px;
   position: relative;
   z-index: 1;
+}
+@media (min-width: 1025px) {
+  .main-card {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 .main-card .title {
   display: flex;
@@ -64,6 +109,11 @@ img {
 /** Enter  */
 .dishes-section {
   padding: 15px 0px;
+}
+@media (min-width: 1025px) {
+  .dishes-section {
+    width: 65%;
+  }
 }
 
 .title-section {
@@ -129,4 +179,9 @@ img {
 .btn-section {
   display: flex;
   justify-content: center;
+}
+@media (min-width: 1025px) {
+  .btn-section {
+    width: 45%;
+  }
 }/*# sourceMappingURL=restaurant-style.css.map */
