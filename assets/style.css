@@ -11,7 +11,7 @@ a {
 
 /*** Colors Variables *** */
 /***** Mixin ***** */
-/** Header * */
+/** Main Header * */
 header {
   color: #353535;
 }
@@ -101,7 +101,7 @@ header h1 {
   padding: 0px;
 }
 
-/** Call to action section * */
+/** Call to action Section * */
 .call-to-action {
   background-color: #F6F6F6;
   display: flex;
@@ -147,7 +147,7 @@ header h1 {
   filter: drop-shadow(0px 4px 15px rgba(0, 0, 0, 0.35));
 }
 
-/** Function *  */
+/** Function  Section *  */
 .function {
   background-color: white;
   padding: 40px 25px;
@@ -205,7 +205,7 @@ header h1 {
   }
 }
 
-/** Restautants * */
+/** Restautants Section * */
 .restautants {
   background-color: #F6F6F6;
   display: flex;
@@ -311,7 +311,7 @@ header h1 {
   }
 }
 
-/** Footer * */
+/** Main Footer * */
 footer {
   background-color: #353535;
   color: white;
