@@ -8,7 +8,7 @@
   }
 }
 
-/** Header * */
+/** Header Section * */
 .back {
   position: absolute;
   margin: 0px 340px 0px 0px;
@@ -53,7 +53,7 @@
   }
 }
 
-/** Card */
+/** Main Card  * */
 .main-card {
   background-color: #F6F6F6;
   padding: 15px;
@@ -116,7 +116,7 @@
   }
 }
 
-/** Enter  */
+/** Each Section * */
 .dishes-section {
   padding: 15px 0px;
 }
