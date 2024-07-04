@@ -8,10 +8,9 @@ a
   text-decoration: none 
   color: black
 
-/*** Variables ***
+/*** Colors Variables ***
 
 $primary-color: #9356DC
-$secondary-color: #FCA311
 $main-bg-color: #F6F6F6
 $tertiary-color: #99E2D0
 $green: #008766
@@ -151,6 +150,9 @@ header h1
   background-color: white
   padding: 40px 25px
 
+  @media (min-width: 768px) 
+    padding: 40px 60px
+
   @media (min-width: 1024px) 
     padding: 50px 180px
 
@@ -199,14 +201,17 @@ header h1
   flex-direction: column
   padding: 40px 20px
 
+  @media (max-width: 1023px) 
+    padding: 40px 60px
+
   @media (min-width: 1024px) 
     padding: 50px 180px
- 
+
   h2
     padding: 10px 0px
 
   .cards 
-    @media (min-width: 1024px) 
+    @media (min-width: 768px) 
       display: flex
       flex-wrap: wrap
       flex-direction: row
@@ -217,7 +222,7 @@ header h1
       background-color: white
       margin: 20px 0px
 
-      @media (min-width: 1024px) 
+      @media (min-width: 768px) 
         width: 48% 
 
     img 
@@ -290,22 +295,25 @@ footer
   color: white
   padding: 10px 10px 30px 10px
   
-  @media (min-width: 1025px)
+  @media (min-width: 768px)
     display: flex
     flex-direction: row-reverse
     padding: 60px 15px 30px 15px
 
   div 
-    @media (min-width: 1025px)
+    @media (min-width: 768px)
       display: flex
 
   ul 
     list-style-type: none
     padding: 0px 10px
 
-    @media (min-width: 1025px)
+    @media (min-width: 768px)
       display: flex
       align-items: center
+      padding: 0px 5px 0px 0px
+
+    @media (min-width: 1025px)
       padding: 0px 35px 0px 0px
 
     li 
