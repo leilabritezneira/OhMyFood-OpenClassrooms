@@ -1,13 +1,7 @@
 /*** Variables ***
 
-$primary-color: #9356DC
-$secondary-color: #FCA311
 $main-bg-color: #F6F6F6
 $tertiary-color: #99E2D0
-$green: #008766
-$font-grey: #353535
-$light-grey: #EAEAEA
-$icon-color: #7E7E7E
 
 /***** Mixin *****
 
@@ -15,7 +9,7 @@ $icon-color: #7E7E7E
   filter: drop-shadow(0px 4px $blur $color)
 
 main 
-  @media (min-width: 1025px) 
+  @media (min-width: 768px) 
     display: flex
     flex-direction: column
     align-items: center
@@ -26,6 +20,9 @@ main
   position: absolute
   margin: 0px 340px 0px 0px
   
+  @media (min-width: 768px)
+    margin: 0px 740px 0px 0px
+
   @media (min-width: 1025px)
     width: 100%
     margin: 0px
@@ -59,11 +56,14 @@ main
   position: relative
   z-index: 1
 
-  @media (min-width: 1025px)
-    width: 70%
+  @media (min-width: 768px)
+    width: 80%
     display: flex
     flex-direction: column
     align-items: center
+
+  @media (min-width: 1025px)
+    width: 70%
 
   .title
     display: flex
@@ -107,7 +107,7 @@ main
 
 .dishes-section
   padding: 15px 0px
-  @media (min-width: 1025px)
+  @media (min-width: 768px)
     width: 65%
 
 .title-section 
