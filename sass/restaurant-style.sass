@@ -8,6 +8,11 @@ $tertiary-color: #99E2D0
 @mixin shadow($blur, $color)
   filter: drop-shadow(0px 4px $blur $color)
 
+@mixin hidden-text
+  overflow: hidden
+  white-space: nowrap
+  text-overflow: ellipsis
+
 main 
   @media (min-width: 768px) 
     display: flex
@@ -133,9 +138,7 @@ main
 
   .content-card 
     padding: 12px 15px
-    overflow: hidden
-    white-space: nowrap
-    text-overflow: ellipsis
+    @include hidden-text
 
   .price
     padding: 12px 15px
@@ -146,11 +149,10 @@ main
   .card-text
     font-weight: 300
     padding-top: 5px 
+    @include hidden-text
 
-    &:hover
-      overflow: hidden
-      white-space: nowrap
-      text-overflow: ellipsis
+  .hidden-text
+    @include hidden-text
 
   .selected 
     display: none
