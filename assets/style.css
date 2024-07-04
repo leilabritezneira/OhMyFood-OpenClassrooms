@@ -9,7 +9,7 @@ a {
   color: black;
 }
 
-/*** Variables *** */
+/*** Colors Variables *** */
 /***** Mixin ***** */
 /** Header * */
 header {
@@ -152,14 +152,14 @@ header h1 {
   background-color: white;
   padding: 40px 25px;
 }
-@media (min-width: 1024px) {
-  .function {
-    padding: 50px 180px;
-  }
-}
 @media (min-width: 768px) {
   .function {
     padding: 40px 60px;
+  }
+}
+@media (min-width: 1024px) {
+  .function {
+    padding: 50px 180px;
   }
 }
 .function h2 {
@@ -212,14 +212,14 @@ header h1 {
   flex-direction: column;
   padding: 40px 20px;
 }
-@media (min-width: 1024px) {
-  .restautants {
-    padding: 50px 180px;
-  }
-}
 @media (max-width: 1023px) {
   .restautants {
     padding: 40px 60px;
+  }
+}
+@media (min-width: 1024px) {
+  .restautants {
+    padding: 50px 180px;
   }
 }
 .restautants h2 {
