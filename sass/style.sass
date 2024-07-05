@@ -33,6 +33,8 @@ $icon-color: #7E7E7E
 
 header
   color: $font-grey
+  z-index: 1
+  position: relative
 
   div
     width: 100%
@@ -321,3 +323,52 @@ footer
 
       @media (min-width: 1025px)
       padding: 5px
+
+/** Loader **/
+
+.loader-container
+  position: fixed 
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  display: flex
+  justify-content: center
+  align-items: center
+
+.loader
+  border: 16px solid #f3f3f3
+  border-radius: 50%
+  border-top: 16px solid #9356DC
+  width: 120px
+  height: 120px
+  animation: spin 2s linear infinite
+
+@keyframes spin
+  0%
+    transform: rotate(0deg)
+  100%
+    transform: rotate(360deg)
+
+.loader.hide
+  opacity: 0
+  animation: fadeOut 1s forwards
+
+@keyframes fadeOut
+  0%
+    opacity: 1
+  100%
+    opacity: 0
+    visibility: hidden
+
+main, header
+  opacity: 0
+  animation: fadeIn 0.5s forwards
+  animation-delay: 3s /* Retraso para asegurar que comience después de que el loader desaparezca */
+
+@keyframes fadeIn
+  0%
+    opacity: 0
+  100%
+    opacity: 1
+
