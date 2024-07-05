@@ -157,19 +157,20 @@ main
   .selected 
     display: none
 
-    &:hover
-      /*display: flex
-      background-color: $tertiary-color
-      padding:27px 20px
-      width: 10%
-      display: flex
-      justify-content: center
-      border-radius: 0px 20px 20px 0px
+  &:hover > .selected
+    display: flex
+    transition-delay: 300ms
+    transition-property: transform
+    background-color: $tertiary-color
+    padding: 27px 20px
+    width: 10%
+    justify-content: center
+    border-radius: 0px 20px 20px 0px
 
     .fa-circle-check
       color: white
 
-** Button Section *
+/** Button Section *
 
 .btn-section 
   display: flex

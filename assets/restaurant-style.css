@@ -176,19 +176,21 @@
 .card .selected {
   display: none;
 }
-.card .selected:hover {
-  /*display: flex */
+.card:hover > .selected {
+  display: flex;
+  transition-delay: 300ms;
+  transition-property: transform;
   background-color: #99E2D0;
   padding: 27px 20px;
   width: 10%;
-  display: flex;
   justify-content: center;
   border-radius: 0px 20px 20px 0px;
 }
-.card .selected .fa-circle-check {
+.card:hover > .selected .fa-circle-check {
   color: white;
 }
 
+/** Button Section * */
 .btn-section {
   display: flex;
   justify-content: center;
