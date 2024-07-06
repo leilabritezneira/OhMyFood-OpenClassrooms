@@ -19,6 +19,16 @@ main
     flex-direction: column
     align-items: center
 
+/**** Cards section animation **** 
+
+@keyframes slideInRight
+  from
+    transform: translateX(100%)
+    opacity: 0
+  to
+    transform: translateX(0)
+    opacity: 1
+
 /** Header Section *
 
 .back
@@ -111,6 +121,7 @@ main
 /** Each Section *
 
 .dishes-section
+  animation: slideInRight 3.8s ease-out forwards
   padding: 15px 0px
   @media (min-width: 768px)
     width: 65%
@@ -178,3 +189,4 @@ main
 
   @media (min-width: 1025px)
     width: 45%
+
