@@ -145,7 +145,6 @@ header h1
     @include gradient(#ff88da, #9365df)
     @include shadow(15px, rgba(0, 0, 0, 35%))
 
-
 /** Function  Section * 
 
 .function
@@ -361,10 +360,10 @@ footer
     opacity: 0
     visibility: hidden
 
-main, header
+.after-loader
   opacity: 0
   animation: fadeIn 0.5s forwards
-  animation-delay: 3s /* Retraso para asegurar que comience después de que el loader desaparezca */
+  animation-delay: 3s 
 
 @keyframes fadeIn
   0%

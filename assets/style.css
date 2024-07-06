@@ -394,7 +394,7 @@ footer ul li {
     visibility: hidden;
   }
 }
-main, header {
+.after-loader {
   opacity: 0;
   animation: fadeIn 0.5s forwards;
   animation-delay: 3s;
