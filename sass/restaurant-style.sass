@@ -8,13 +8,32 @@ $tertiary-color: #99E2D0
 @mixin shadow($blur, $color)
   filter: drop-shadow(0px 4px $blur $color)
 
+@mixin hidden-text
+  overflow: hidden
+  white-space: nowrap
+  text-overflow: ellipsis
+
 main 
   @media (min-width: 768px) 
     display: flex
     flex-direction: column
     align-items: center
 
-/** Header *
+/**** Cards section animation **** 
+
+@keyframes slideInRight
+  from
+    transform: translateX(100%)
+    opacity: 0
+  to
+    transform: translateX(0)
+    opacity: 1
+
+/** Header Section *
+
+.header
+  margin: 0px
+  filter: none
 
 .back
   position: absolute
@@ -46,7 +65,7 @@ main
     object-fit: cover  
     object-position: 0 55%
 
-/** Card
+/** Main Card  *
 
 .main-card 
   background-color: $main-bg-color
@@ -103,9 +122,10 @@ main
         @media (min-width: 1025px)
           font-size: x-large
 
-/** Enter 
+/** Each Section *
 
 .dishes-section
+  animation: slideInRight 3.8s ease-out forwards
   padding: 15px 0px
   @media (min-width: 768px)
     width: 65%
@@ -133,9 +153,7 @@ main
 
   .content-card 
     padding: 12px 15px
-    overflow: hidden
-    white-space: nowrap
-    text-overflow: ellipsis
+    @include hidden-text
 
   .price
     padding: 12px 15px
@@ -146,26 +164,28 @@ main
   .card-text
     font-weight: 300
     padding-top: 5px 
+    @include hidden-text
 
-    &:hover
-      overflow: hidden
-      white-space: nowrap
-      text-overflow: ellipsis
+  .hidden-text
+    @include hidden-text
 
   .selected 
     display: none
 
-    &:hover
-      /*display: flex
-      background-color: $tertiary-color
-      padding:27px 20px
-      width: 10%
-      display: flex
-      justify-content: center
-      border-radius: 0px 20px 20px 0px
+  &:hover > .selected
+    display: flex
+    transition-delay: 300ms
+    transition-property: transform
+    background-color: $tertiary-color
+    padding: 27px 20px
+    width: 10%
+    justify-content: center
+    border-radius: 0px 20px 20px 0px
 
     .fa-circle-check
       color: white
+
+/** Button Section *
 
 .btn-section 
   display: flex
@@ -173,3 +193,4 @@ main
 
   @media (min-width: 1025px)
     width: 45%
+

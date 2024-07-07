@@ -11,9 +11,11 @@ a {
 
 /*** Colors Variables *** */
 /***** Mixin ***** */
-/** Header * */
+/** Main Header * */
 header {
   color: #353535;
+  z-index: 1;
+  position: relative;
 }
 header div {
   width: 100%;
@@ -101,7 +103,7 @@ header h1 {
   padding: 0px;
 }
 
-/** Call to action section * */
+/** Call to action Section * */
 .call-to-action {
   background-color: #F6F6F6;
   display: flex;
@@ -147,7 +149,7 @@ header h1 {
   filter: drop-shadow(0px 4px 15px rgba(0, 0, 0, 0.35));
 }
 
-/** Function *  */
+/** Function  Section *  */
 .function {
   background-color: white;
   padding: 40px 25px;
@@ -205,14 +207,14 @@ header h1 {
   }
 }
 
-/** Restautants * */
+/** Restautants Section * */
 .restautants {
   background-color: #F6F6F6;
   display: flex;
   flex-direction: column;
   padding: 40px 20px;
 }
-@media (max-width: 1023px) {
+@media (min-width: 768px) {
   .restautants {
     padding: 40px 60px;
   }
@@ -311,7 +313,7 @@ header h1 {
   }
 }
 
-/** Footer * */
+/** Main Footer * */
 footer {
   background-color: #353535;
   color: white;
@@ -348,4 +350,61 @@ footer ul {
 footer ul li {
   padding: 5px 0px;
   padding: 5px;
+}
+/** Loader **/
+.loader-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #9356DC;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.loader.hide {
+  opacity: 0;
+  animation: fadeOut 1s forwards;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+.after-loader {
+  opacity: 0;
+  animation: fadeIn 0.5s forwards;
+  animation-delay: 3s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }/*# sourceMappingURL=style.css.map */

@@ -29,10 +29,12 @@ $icon-color: #7E7E7E
 @mixin gradient($first-color, $second-color) 
   background-image: linear-gradient(175deg, $first-color, $second-color)
 
-/** Header *
+/** Main Header *
 
 header
   color: $font-grey
+  z-index: 1
+  position: relative
 
   div
     width: 100%
@@ -104,7 +106,7 @@ header h1
   justify-content: center
   padding: 0px
 
-/** Call to action section *
+/** Call to action Section *
 
 .call-to-action
   background-color: $main-bg-color
@@ -143,8 +145,7 @@ header h1
     @include gradient(#ff88da, #9365df)
     @include shadow(15px, rgba(0, 0, 0, 35%))
 
-
-/** Function * 
+/** Function  Section * 
 
 .function
   background-color: white
@@ -193,7 +194,7 @@ header h1
     @media (min-width: 1024px) 
       font-size: medium
 
-/** Restautants *
+/** Restautants Section *
 
 .restautants 
   background-color: $main-bg-color
@@ -201,7 +202,7 @@ header h1
   flex-direction: column
   padding: 40px 20px
 
-  @media (max-width: 1023px) 
+  @media (min-width: 768px) 
     padding: 40px 60px
 
   @media (min-width: 1024px) 
@@ -288,7 +289,7 @@ header h1
           @media (min-width: 1025px)
             font-size: x-large
 
-/** Footer *
+/** Main Footer *
 
 footer
   background-color: $font-grey
@@ -321,3 +322,52 @@ footer
 
       @media (min-width: 1025px)
       padding: 5px
+
+/** Loader **/
+
+.loader-container
+  position: fixed 
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  display: flex
+  justify-content: center
+  align-items: center
+
+.loader
+  border: 16px solid #f3f3f3
+  border-radius: 50%
+  border-top: 16px solid #9356DC
+  width: 120px
+  height: 120px
+  animation: spin 2s linear infinite
+
+@keyframes spin
+  0%
+    transform: rotate(0deg)
+  100%
+    transform: rotate(360deg)
+
+.loader.hide
+  opacity: 0
+  animation: fadeOut 1s forwards
+
+@keyframes fadeOut
+  0%
+    opacity: 1
+  100%
+    opacity: 0
+    visibility: hidden
+
+.after-loader
+  opacity: 0
+  animation: fadeIn 0.5s forwards
+  animation-delay: 3s 
+
+@keyframes fadeIn
+  0%
+    opacity: 0
+  100%
+    opacity: 1
+
