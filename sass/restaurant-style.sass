@@ -125,10 +125,16 @@ main
 /** Each Section *
 
 .dishes-section
-  animation: slideInRight 3.8s ease-out forwards
   padding: 15px 0px
+  
   @media (min-width: 768px)
     width: 65%
+
+@keyframes fadeIn
+  0%
+    opacity: 0
+  100%
+    opacity: 1
 
 .title-section 
   font-weight: 300
@@ -150,6 +156,7 @@ main
   align-items: flex-end
   background-color: white
   @include shadow(10px, rgba(0, 0, 0, 10%))
+  animation: fadeIn 1.5s ease-out forwards
 
   .content-card 
     padding: 12px 15px
@@ -170,20 +177,22 @@ main
     @include hidden-text
 
   .selected 
-    display: none
-
-  &:hover > .selected
+    width: 0px
     display: flex
-    transition-delay: 300ms
-    transition-property: transform
+    transition-duration: 3s
+    transition-property: width
     background-color: $tertiary-color
-    padding: 27px 20px
-    width: 10%
     justify-content: center
     border-radius: 0px 20px 20px 0px
+    height: 100%
 
     .fa-circle-check
       color: white
+
+  &:hover > .selected
+    width: 10%
+    display: flex
+
 
 /** Button Section *
 
