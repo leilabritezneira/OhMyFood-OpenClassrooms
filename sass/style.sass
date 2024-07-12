@@ -27,7 +27,7 @@ $icon-color: #7E7E7E
   border-radius: 50px
 
 @mixin gradient($first-color, $second-color) 
-  background-image: linear-gradient(175deg, $first-color, $second-color)
+  background: linear-gradient(175deg, $first-color, $second-color)
 
 /** Main Header *
 
@@ -141,7 +141,8 @@ header h1
   min-width: 55%
 
   &:hover
-    transform: background-image, filter
+    transform: filter
+    opacity: 1
     @include gradient(#ff88da, #9365df)
     @include shadow(15px, rgba(0, 0, 0, 35%))
 
