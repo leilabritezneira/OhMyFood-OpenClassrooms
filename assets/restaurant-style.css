@@ -198,7 +198,12 @@
   white-space: nowrap;
   text-overflow: ellipsis;
 }
-.card .selected {
+.card .selected-card {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+.card .selected-card .selected {
   width: 0px;
   display: flex;
   transition-duration: 3s;
@@ -206,14 +211,19 @@
   background-color: #99E2D0;
   justify-content: center;
   border-radius: 0px 20px 20px 0px;
-  height: 100%;
 }
-.card .selected .fa-circle-check {
-  color: white;
+.card .selected-card .selected .fa-circle-check {
+  display: none;
 }
-.card:hover > .selected {
-  width: 10%;
+.card:hover > .selected-card .selected {
+  width: 65px;
   display: flex;
+  padding: 23px 0px;
+}
+.card:hover > .selected-card .selected .fa-circle-check {
+  color: white;
+  display: flex;
+  font-size: x-large;
 }
 
 /** Button Section * */

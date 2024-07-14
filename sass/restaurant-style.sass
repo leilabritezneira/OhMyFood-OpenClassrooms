@@ -175,8 +175,13 @@ main
 
   .hidden-text
     @include hidden-text
+  
+  .selected-card
+    display: flex
+    align-items: flex-end
+    justify-content: flex-end
 
-  .selected 
+  .selected-card .selected 
     width: 0px
     display: flex
     transition-duration: 3s
@@ -184,15 +189,19 @@ main
     background-color: $tertiary-color
     justify-content: center
     border-radius: 0px 20px 20px 0px
-    height: 100%
 
     .fa-circle-check
-      color: white
+      display: none
 
-  &:hover > .selected
-    width: 10%
+  &:hover > .selected-card .selected
+    width: 65px
     display: flex
-
+    padding: 23px 0px
+    
+    .fa-circle-check
+      color: white
+      display: flex
+      font-size: x-large
 
 /** Button Section *
 
