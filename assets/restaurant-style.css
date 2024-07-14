@@ -206,7 +206,7 @@
 .card .selected-card .selected {
   width: 0px;
   display: flex;
-  transition-duration: 3s;
+  transition-duration: 2s;
   transition-property: width;
   background-color: #99E2D0;
   justify-content: center;
