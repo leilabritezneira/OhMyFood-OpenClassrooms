@@ -125,10 +125,16 @@ main
 /** Each Section *
 
 .dishes-section
-  animation: slideInRight 3.8s ease-out forwards
   padding: 15px 0px
+  
   @media (min-width: 768px)
     width: 65%
+
+@keyframes fadeIn
+  0%
+    opacity: 0
+  100%
+    opacity: 1
 
 .title-section 
   font-weight: 300
@@ -150,6 +156,7 @@ main
   align-items: flex-end
   background-color: white
   @include shadow(10px, rgba(0, 0, 0, 10%))
+  animation: fadeIn 1.5s ease-out forwards
 
   .content-card 
     padding: 12px 15px
@@ -168,22 +175,33 @@ main
 
   .hidden-text
     @include hidden-text
-
-  .selected 
-    display: none
-
-  &:hover > .selected
+  
+  .selected-card
     display: flex
-    transition-delay: 300ms
-    transition-property: transform
+    align-items: flex-end
+    justify-content: flex-end
+
+  .selected-card .selected 
+    width: 0px
+    display: flex
+    transition-duration: 2s
+    transition-property: width
     background-color: $tertiary-color
-    padding: 27px 20px
-    width: 10%
     justify-content: center
     border-radius: 0px 20px 20px 0px
 
     .fa-circle-check
+      display: none
+
+  &:hover > .selected-card .selected
+    width: 65px
+    display: flex
+    padding: 23px 0px
+    
+    .fa-circle-check
       color: white
+      display: flex
+      font-size: x-large
 
 /** Button Section *
 

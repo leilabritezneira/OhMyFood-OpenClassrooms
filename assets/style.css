@@ -81,7 +81,7 @@ header h1 {
   color: white;
 }
 .icon__gradient {
-  background: linear-gradient(#9356DC, #FF79DA);
+  background-image: linear-gradient(#9356DC, #FF79DA);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -140,12 +140,10 @@ header h1 {
   background-image: linear-gradient(175deg, #FF79DA, #9356DC);
   filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.25));
   border-radius: 50px;
-  transition: transform 1s;
   min-width: 55%;
 }
 .btn:hover {
-  transform: background-image, filter;
-  background-image: linear-gradient(175deg, #ff88da, #9365df);
+  opacity: 0.9;
   filter: drop-shadow(0px 4px 15px rgba(0, 0, 0, 0.35));
 }
 
