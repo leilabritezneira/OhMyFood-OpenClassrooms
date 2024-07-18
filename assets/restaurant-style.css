@@ -224,6 +224,7 @@
   color: white;
   display: flex;
   font-size: x-large;
+  animation: fadeIn 2s ease-out forwards;
 }
 
 /** Button Section * */
