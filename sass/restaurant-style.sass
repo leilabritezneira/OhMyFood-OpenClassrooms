@@ -178,13 +178,14 @@ main
   
   .selected-card
     display: flex
+    height:70px
+    border-radius: 0px 20px 20px 0px
     align-items: flex-end
-    justify-content: flex-end
 
   .selected-card .selected 
     width: 0px
     display: flex
-    transition-duration: 2s
+    transition-duration: 1.5s
     transition-property: width
     background-color: $tertiary-color
     justify-content: center
@@ -192,17 +193,20 @@ main
 
     .fa-circle-check
       display: none
-
+  
   &:hover > .selected-card .selected
     width: 65px
+    animation: fadeIn 1.5s ease-out forwards
     display: flex
-    padding: 23px 0px
+    flex-wrap: wrap
+    align-content: center
+    height: 100%
     
     .fa-circle-check
       color: white
       display: flex
       font-size: x-large
-      animation: fadeIn 2s ease-out forwards
+      animation: fadeIn 1.5s ease-out forwards
 
 /** Button Section *
 
